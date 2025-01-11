@@ -1,0 +1,342 @@
+
+#navbar{
+    display: flex;
+    justify-content: space-evenly;   
+    align-items: center;  
+    padding:20px;
+    background-color: rgb(214, 226, 229);
+    z-index: 2;
+    position: fixed;
+    width: 100%;
+    margin-top:-8px;
+}
+.navbar-details a{
+    margin-right: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(38, 59, 59);
+    position: relative;
+}
+.navbar-details a::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 4px;
+    bottom: -7px;
+    background: rgb(38, 59, 59);
+    border-radius: 10px;
+    transition: all 300ms;
+}
+.navbar-details a:hover::before{
+    width: 100%;
+}
+.title h1{
+    margin: 0;
+    font-size: 35px;
+    color: rgb(38, 59, 59);
+    position: relative;
+}
+.title h1::before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 4px;
+    bottom: -1px;
+    background: rgb(38, 59, 59);
+    border-radius: 10px;
+    transition: all 300ms;
+}
+.title h1:hover::before{
+    width: 100%;
+}
+.item-cart a{
+    margin-right: 20px;
+    color: rgb(38, 59, 59);
+}
+.item-cart a i{
+    font-size: 25px;
+    border-radius: 50%;
+    background-color: rgb(38, 59, 59);
+    color: rgb(214, 226, 229);
+    padding: 10px;
+    transition: all 300ms;
+}
+.item-cart a i:hover{
+   transform: scale(1.2);
+}
+.btn{
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 8px;
+    font-weight: 600;
+    border: 2px solid rgb(38, 59, 59);
+    color: rgb(38, 59, 59);
+    transition: all 300ms;
+}
+.btn:hover{
+    background-color: rgb(38, 59, 59);
+    color: rgb(214, 226, 229);
+}
+
+/* about-info */
+
+#about-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(214, 226, 229);
+    margin-top: 80px;
+}
+#about-info .content h1{
+    font-size: 60px;
+    font-family: "Dancing Script", serif;
+    width: 400px;
+    color: rgb(38, 59, 59);
+    font-weight: 600;
+    padding-left : 50px;
+}
+#about-info .content p{
+    font-size: 25px;
+    width: 500px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(38, 59, 59);
+    padding-left : 50px;
+}
+#about-info button{
+    padding: 8px;
+    font-size: 18px;
+    border: 2px solid rgb(38, 59, 59);
+    font-weight: 600;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    box-shadow: -3px -3px 5px 5px rgba(0,0,0,0.75);
+    transition: all 300ms;
+}
+#about-info button:hover{
+    background-color: rgb(38, 59, 59);
+    color: rgb(214, 226, 229);
+}
+#about-info .bg-img img{
+    height: 400px;
+    object-fit: cover;
+}
+
+.online-shop{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    margin: 50px;
+    background-color: rgb(245, 245, 245);
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid rgb(52, 133, 153);
+}
+.online-shop .shoping-details{
+    border-right:2px solid rgb(52, 133, 153) ;
+    padding-right: 60px;
+}
+.online-shop .shoping-details:nth-child(4){
+    border: none;
+    padding-right: 0;
+}
+.online-shop .shoping-details i{
+    font-size: 30px;
+    background-color: white;
+    border-radius: 50%;
+    padding: 10px;
+    border: 1px solid rgb(179, 206, 212);
+    color: rgb(52, 133, 153);
+}
+.online-shop .shoping-details h3{ 
+    margin: 10px;
+    font-size: 25px;
+}
+.online-shop .shoping-details p{
+    margin: 0;
+    font-size: 20px;
+    font-weight: 100;
+}
+.categories{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 70px;
+}
+.categories h1{
+    margin: 0;
+    font-family: cursive;
+    position: relative;
+}
+.categories h1::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 4px;
+    bottom: -8px;
+    background: rgb(38, 59, 59);
+    border-radius: 10px;
+}
+.categories button{
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 12px;
+    border: 2px solid rgb(38, 59, 59);
+    transition: all 300ms;
+}
+.categories button:hover{
+    background-color: rgb(38, 59, 59);
+    color: rgb(214, 226, 229);
+}
+.categories-info{
+    display: flex;
+    margin: 0 70px;
+    justify-content: space-between;
+}
+.categories-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.categories-details img{
+    height: 300px;
+    width: 250px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    transition: all 300ms;
+}
+.categories-details img:hover{
+    transform: scale(1.1);
+}
+.categories-details h2,h4{
+    margin: 3px;
+    color: rgb(38, 59, 59);
+    font-weight: 600;
+}
+
+/* Shoping-details */
+
+#shoping{
+    margin: 50px 70px;
+}
+
+.shoping-cart{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#shoping h1{
+    text-align: center;
+    font-family: "Dancing Script", serif;
+    font-size: 40px;
+    position: relative;
+}
+#shoping h1::before{
+    position: absolute;
+    content: '';
+    width: 19%;
+    height: 4px;
+    bottom: -6px;
+    background: rgb(38, 59, 59);
+    border-radius: 10px;
+}
+.shoping-cart img{
+    width: 220px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.shoping-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.shoping-details h2{
+    margin: 0;
+    margin-top: 15px;
+}
+.shoping-details h4{
+    font-size: 20px;
+    margin-top: 10px;
+}
+.shoping-details h4 i{
+    margin-right: 5px;
+    font-size: 20px;
+}
+#shoping a {
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin: 0;
+}
+
+/* summer-sale */
+
+.summer-sale{
+height: 500px;
+margin-left: 19%;
+margin-top: 20px;
+padding: 10px;
+background-repeat: no-repeat;
+background-image: url(/images/Anushka-Sharma-1.jpg);
+
+}
+.summer-sale h1{
+    color: white;
+    font-family: "Pacifico", serif;
+    font-size: 35px;
+    margin-left: 30px;
+}
+.summer-sale-info p{
+    font-size: 19px;
+    color: white;
+    margin-left: 30px;
+    width: 43%;
+}
+.summer-sale-info h3,h4{
+    color: white;
+    margin: 0;
+    font-size: 25px;
+    margin-left: 30px;
+}
+.summer-sale-info h5{
+    color: white;
+    font-size: 28px;
+    margin:30px;
+}
+.summer-sale-info span{
+    color: rgb(252, 117, 139);
+}
+.summer-sale-info a{
+    margin-left: 30px;
+}
+
+/* featured-products */
+
+.featured-products{
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.featured-products-img img{
+    width: 400px;
+    height: 500px;
+    border-radius: 12px;
+}
+.featured-products-detail{
+    display: grid;
+    grid-template-columns: repeat(3,200px);
+    justify-content: center;
+    gap: 30px;
+}
+.featured-products-info img{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+
+}
